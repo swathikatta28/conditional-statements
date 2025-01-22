@@ -1,0 +1,86 @@
+22nd January 2025
+for(let i=1;i<=8;i=i+2){
+        if(i>=4){
+            break
+        }
+        console.log(i)
+    }
+Explanation:
+#i=1,3,5
+#condition=1<=8;3<=8;5<=8
+#updated=i=i+2;1+2=3;3+2=5
+#break=1;3
+Output:
+1
+3
+5
+for(let i=1;i<=8;i=i+1){
+        if(i==5){
+            continue
+        }
+        console.log(i)
+    }
+Output:
+1
+2
+3
+4
+6
+7
+for(let i=1;i<=8;i=i+2){
+        if(i>5){
+            continue
+        }
+        console.log(i)
+    }
+Output:
+1
+3
+5
+Explanation:
+#i=1;3;5
+#condition=1<=8;3<=8;5<=8
+#updated=1+2=3;3+2=5;5+2=7
+#break=1;3;5
+Nested Loop:
+A loop inside the another loop
+The Inner Loop will execute one time for each iteration of other loop
+An inner loop within the repeating block of outer loop
+Iteraation:Process of repeating
+Ex:
+//outer loop
+        for (let i=1 ;i<=3;i++){
+            document.write(i,"<br>");
+            //inner loop
+            for (let j=1;j<=4;j++){
+                document.write(j,"");
+            }
+            document.write("<br>")
+        }
+Explanation:
+#Outer loop:
+#condition=1<=3
+#1,2
+#Inner Loop:
+#condition:1<=4
+#1,2,3,4
+Output:
+1
+1234
+2
+1234
+3
+1234
+Right Angle Program
+for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+Program:
+*
+* *
+* * *
+* * * *
+* * * * *
